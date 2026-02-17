@@ -1,0 +1,12 @@
+body { background-color: #FFDE59; font-family: 'Lexend Mega', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.vinyl-card { background: #fff; width: 340px; border: 4px solid #000; box-shadow: 10px 10px 0px #000; overflow: hidden; }
+.vinyl-card-header { height: 200px; background: #FF66C4; border-bottom: 4px solid #000; position: relative; display: flex; justify-content: center; align-items: center; }
+.vinyl-card-header .badge { position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 6px 12px; font-size: 0.7rem; z-index: 2; }
+.vinyl-card-header .vinyl-img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.1); }
+.vinyl-card-content { padding: 25px; }
+.vinyl-card-content .title { font-size: 1.2rem; margin: 0 0 10px; font-weight: 800; }
+.vinyl-card-content .desc { font-size: 0.8rem; color: #333; margin-bottom: 20px; }
+.vinyl-card-content .footer { display: flex; justify-content: space-between; align-items: center; }
+.vinyl-card-content .footer .price { font-size: 1.4rem; font-weight: 800; }
+.buy-btn { background: #FFDE59; padding: 10px 15px; border: 4px solid #000; box-shadow: 4px 4px 0px #000; cursor: pointer; font-family: inherit; font-weight: 800; }
+.buy-btn:hover { background: #FF66C4; }

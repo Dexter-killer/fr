@@ -1,0 +1,76 @@
+$bg-color: #FFDE59;
+$black: #000;
+$pink: #FF66C4;
+
+@mixin brutal-style($offset) {
+  border: 4px solid $black;
+  box-shadow: $offset $offset 0px $black;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: 'Lexend Mega', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.vinyl-card {
+  background: #fff;
+  width: 340px;
+  @include brutal-style(10px);
+  overflow: hidden; // Чтобы картинка не вылезала за скругления (если они будут)
+
+  &-header {
+    height: 200px;
+    background: $pink;
+    border-bottom: 4px solid $black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: $black;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 0.7rem;
+      z-index: 2;
+    }
+
+    .vinyl-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Картинка заполнит всё пространство
+      filter: contrast(1.1); // Добавим немного сочности
+    }
+  }
+
+  &-content {
+    padding: 25px;
+    .title { font-size: 1.2rem; margin: 0 0 10px; }
+    .desc { font-size: 0.8rem; color: #333; margin-bottom: 20px; }
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      .price { font-size: 1.4rem; font-weight: 800; }
+    }
+  }
+}
+
+.buy-btn {
+  background: $bg-color;
+  padding: 10px 15px;
+  @include brutal-style(4px);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 800;
+
+  &:hover { background: $pink; }
+}

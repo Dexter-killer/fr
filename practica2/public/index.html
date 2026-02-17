@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Vinyl Base</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="brutal-layout">
+        <header class="brutal-header">
+            <h1>VINYL_<span>ARCHIVE</span></h1>
+        </header>
+
+        <section class="controls">
+            <div class="entry-form">
+                <input type="text" id="v-title" placeholder="ALBUM_TITLE">
+                <input type="number" id="v-price" placeholder="PRICE">
+                <button onclick="addVinyl()">ADD_TO_DB</button>
+            </div>
+        </section>
+
+        <main id="vinyl-list" class="vinyl-grid"></main>
+    </div>
+
+    <script src="logic.js"></script> <!-- Имя скрипта изменено -->
+</body>
+</html>
