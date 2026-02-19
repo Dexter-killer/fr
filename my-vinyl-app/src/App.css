@@ -1,0 +1,61 @@
+body {
+  background-color: #FFDE59;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 50px;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  border: 4px solid black;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 8px 8px 0 black;
+}
+
+.form-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  background: #FF66C4; /* Розовый */
+  padding: 20px;
+  border: 4px solid black;
+  box-shadow: 8px 8px 0 black;
+}
+
+input {
+  border: 3px solid black;
+  padding: 10px;
+  font-weight: bold;
+  flex: 1;
+}
+
+button {
+  border: 3px solid black;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 black;
+}
+button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 black; }
+
+.grid { display: grid; gap: 20px; }
+
+.card {
+  background: white;
+  border: 4px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 8px 8px 0 black;
+  transition: 0.1s;
+}
+.card:hover { transform: translate(-2px, -2px); box-shadow: 12px 12px 0 black; }
+
+.del-btn { background: #FF4444; color: white; margin-left: 20px; }
